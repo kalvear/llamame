@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    cursor: pointer;
+}
+.container {
+    position: fixed;
+    bottom: 1em;
+    left: 5em;
+}
+.container2 {
+    bottom: 1em;
+    left: 5em;
+}
+.menu-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    display: table;
+    text-align: center;
+}
+.menu-toggle .fa {
+    color: #fff;
+    font-size: 2em;
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.1s;
+}
+.menu-toggle.open .phone {
+    transition: opacity 0.3s, transform 0.3s;
+    transform: rotate(-180deg) scale(0.5);
+    opacity: 0;
+    transform: translateX(-60px);
+}
+.menu-toggle .phone {
+    transition: opacity 0.3s, transform 0.3s;
+    transform: rotate(-180deg) scale(0.5);
+    transform: translateX(12px);
+}
+.menu-toggle.open .times {
+    transition: opacity 0.3s, transform 0.3s;
+    transform: rotate(-180deg) scale(0.5);
+    transform: translateX(-16px);
+}
+.menu-toggle .times {
+    transition: opacity 0.3s, transform 0.3s;
+    transform: rotate(-180deg) scale(0.5);
+    z-index: 10000;
+    transform: translateX(-100px);
+}
+.menu-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    display: table;
+    text-align: center;
+}
+.menu-toggle .fa {
+    color: #0d79cb;
+    font-size: 2em;
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.1s;
+}
+.menu-toggle.open2 .fa {
+    transition: opacity 0.3s, transform 0.3s;
+    transform: rotate(-180deg) scale(0.5);
+    opacity: 0;
+}
+.btn-app {
+    position: absolute;
+    background-color: #0d79cb;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn-app .fa {
+    line-height: 2.5em;
+}
+.open .btn-app {
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.menu-round {
+    position: absolute;
+    bottom: 0;
+    left: 10em;
+    z-index: 3;
+}
+.menu-round.open .btn-app {
+    transform: translateX(25px);
+}
+.menu-round .btn-app {
+    bottom: 0.25em;
+    right: 0.25em;
+    transition: 0.5s;
+    transform: translateX(-1000px);
+}
+.menu-round.open .btn-app:nth-of-type(1) {
+    right: 0.5em;
+    bottom: 4.25em;
+    transition-delay: 0.2s;
+}
+.menu-round.open .btn-app:nth-of-type(2) {
+    right: 3.5em;
+    bottom: 3.5em;
+    transition-delay: 0.1s;
+}
+.menu-round.open .btn-app:nth-of-type(3) {
+    right: 4.25em;
+    bottom: 0.5em;
+}
+.menu-line {
+    position: absolute;
+    z-index: 2;
+}
+.menu-line .btn-app {
+    bottom: 0;
+    right: 0.5em;
+    transition: 0.3s;
+    transition-delay: 0.5s;
+}
+.menu-line.open .btn-app:nth-of-type(1) {
+    bottom: 4.25em;
+}
+.menu-line.open .btn-app:nth-of-type(1) {
+    bottom: 7.25em;
+}
+.menu-line.open .btn-app:nth-of-type(2) {
+    bottom: 10.25em;
+}
+.menu-line.open .btn-app:nth-of-type(3) {
+    bottom: 13.25em;
+}
+.menu-line.open .btn-app:nth-of-type(4) {
+    bottom: 16.25em;
+}
+.menu-line.open .btn-app:nth-of-type(5) {
+    bottom: 19.25em;
+}
+.menu-line.open .btn-app:nth-of-type(6) {
+    bottom: 22.25em;
+}
+.menu-line.open .btn-app:nth-of-type(7) {
+    bottom: 25.25em;
+}
+input {
+    margin: 5px 15px 0px 15px;
+    border-radius: 5px;
+    border-color: #0d79cb;
+}
+button {
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fbb23c;
+    border-color: #fbb23c;
+}
